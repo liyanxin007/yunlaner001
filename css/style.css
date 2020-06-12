@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置*/
+body,h1,h2,h3,h4,h5,h6,ul,p{margin: 0;}
+ul{list-style-type: none;padding: 0;}
+a{text-decoration: none;}
+img{display: block;}
+
+.clearfix{clear: both;}
+
+h5{flex-shrink: 18px;}
+p{color: #D0CCCC;}
+
+
+/*页头*/
+.about{background-image:url(../images/bj.png);background-position: bottom left;background-repeat: no-repeat;background-attachment: fixed;background-size: 100%;}
+
+
+.header{position:fixed;left:0;top:0;width:100%;padding:12px;box-sizing:border-box;z-index:1000;background-color: #1B1A1A;}
+.nav{float:left;max-width: 1200px;margin: 0 310px;}
+.nav li{float:left;font-size: 16px;}
+.nav a{color:black;display:block;padding:10px 40px;text-align:center;}
+.nav a:hover{color:chartreuse;}
+.mobile_btn{width:40px;float:right;display:none;position:relative;left:-20px;top:-5px;}
+.mobile_btn div{height:2px;background-color:black;margin:5px 10px;}
+.menu{width:100%;position:fixed;left:0;top:45px;background-color:rgba(0,0,0,0.6);padding:30px 0;display:none;}
+.menu a{display:block;color:white;text-align:center;line-height:24px;padding:10px 0;border-bottom:solid 1px #666;}
+.menu span{display:block;}
+@media (max-width:1140px){
+	.header{background-color:transparent;}
+	.nav{display:none;}
+	.mobile_btn{display:block;}
+}
+
+
+/*banner 上的文字*/
+.banner img{width: 100%;}
+.banner_text h3{font-size: 50px;font-weight: normal;margin:20px;}
+.banner_text h4{font-size: 26px;font-weight: normal;}
+.banner_text{text-align: center;max-width: 1200px;margin: 0 auto;color: white;}
+.banner_text a{display: block;width: 180px;height: 40px;line-height: 40px;background-color: orange;border-radius: 20px;
+margin: 180px auto;color: white;transition: 0.3s;}
+.banner_text a:hover{font-size: 18px;color: white;}
+.banner{position: relative;}
+.banner_text{position: absolute;left: 0;right: 0;top:100px;}
+
+
+@media (max-width:980px){
+	.caidan{display: none;} 
+	.daohang{display:none;}
+	.mobile_btn{display:block;}
+	.banner_text{position: absolute;left: 0;right: 0;top:calc((100% - 80px) / 2);}
+	.banner_text h3{font-size:12px;text-align:center;margin: 10px;}
+	.banner_text h4{font-size:10px;text-align:center;}
+}
+
+/*index内容模块*/
+.xiangmu{background-image:url(../images/bj.png);background-position: bottom left;background-repeat: no-repeat;background-attachment: fixed;background-size: 100%;margin: auto;}
+.xiangmu_hezi{max-width: 1200px;padding-top: 20px;margin:0 auto; box-shadow: 10px 13px 8.28px 0.72px rgba(4,0,0,0);transition: 0.6s;border-radius: 10px;}
+.xiangmu_hezi:hover{transform: translate(0,5px);box-shadow: 10px 13px 8.28px 0.72px rgba(4,0,0,0.2);}
+.row1{float: left;border:1px solid #565656;}
+.f1{float: left;margin-left:50px;margin-top: 20px; width:450px;font-size: 18px;}
+
+.f1 p{margin-top: 40px;color: #3F3E3E; letter-spacing: 2px;line-height: 32px;}
+.f1 a{font-size: 28px;color: black;}
+
+@media(max-width:980px){
+	.xiangmu{background-repeat: repeat;}
+	.xiangmu_hezi img{width: 100%;}
+	.f1{float: left;margin-left:50px;margin-top: 20px; width: calc(100% - 100px);font-size: 18px;}
+	.f1 a{font-size: 18px;}
+	.f1 p{font-size: 12px;font-weight:bold;}
+}
+
+/*关于模块*/
+.about_content{max-width: 1200px;margin: 0 auto;}
+
+/*banner   三折页*/
+.about_content{background-image:url(../images/bj.png);background-repeat: no-repeat;background-attachment: fixed;background-size: 100%;margin: auto;}
+.title{text-align: center;position:relative;margin: auto;}
+.title h1{font-size: 200px;color: #D0CCCC;}
+.title h3{font-size: 40px;position:absolute;left: 0;right: 0;top: 100px;}
+.title a{display: block;width: 150px;height: 40px;line-height: 41px; background-color: goldenrod;border-radius: 30px;margin: 0 auto;}
+.about_col img{text-align: center; margin: 20px auto;}
+.about_col img:nth-child(6){margin-bottom: 0;}
+.title h3 a{display:inline;}
+/*banner  */
+@media(max-width:1190px){
+	.about_content{background-repeat: repeat;}
+	.about_col img{width:100%;}
+}
+/*海报*/
+.haibao{max-width: 1200px;}
+.haibao img{margin: 20px 10px;float: left;}
+@media(max-width:1200px){
+	.haibao img{ width:100%;}
+	
+}
+
+/*三折页*/
+.about_co3 img{text-align: center;margin: 20px auto;}
+.about_co3 img:nth-child(4){margin-bottom: 0;}
+@media(max-width:1200px){
+	.about_co3 img{width:100%;}	
+}
+
+/*画册*/
+.about_co4 img{text-align: center;margin: 20px auto;}
+.about_co4 img:nth-child(9){margin-bottom: 0;}
+@media(max-width:1200px){
+	.about_co4 img{width:100%;}	
+}
+/*logo*/
+.about_co5 img{text-align: center;margin: 20px auto;}
+.about_co5 img:nth-child(20){margin-bottom: 0;}
+@media(max-width:1200px){
+	.about_co5 img{width:100%;}	
+}
+
+/*网页*/
+.about_co6 img{text-align: center;margin: 20px auto;}
+.about_co6 img:nth-child(10){margin-bottom: 0;}
+@media(max-width:1200px){
+	.about_co6 img{width:100%;}	
+}
+
+
+/*科技公司*/
+.about_co7 img{text-align: center;margin: 20px auto;}
+.about_co7 img:nth-child(5){margin-bottom: 0;}
+@media(max-width:1200px){
+	.about_co7 img{width: 100%;}	
+}
+/*页脚*/
+.yejiao{background-color:#1B1A1A;}
+.jianju{width: auto;height: 30px; background-color: white;}
+.yejiao_hezi{max-width: 1200px;height: 120px;padding: 20px 0;margin: 0 auto; }
+.zhong{width:700px; margin: 0px auto;}
+.zhong ul:nth-child(1){padding-top: 25px;line-height: 26px;}
+.yejiao_hezi ul{float: left;}
+.yejiao_hezi li{font-size: 14px;color: #fff;}
+.yejiao img{width: 120px;height:120px;float: left;margin-left: 250px;}
+/*
+.yejiao img:hover{width: 120px;height: 120px;transform:scale(1.5);
+}
+*/
+
+@media(max-width:670px){
+	.zhong{width: 210px; margin: 0 auto;}
+	.yejiao_hezi{height: 60px;padding: 20px 0;margin: 0 auto;}
+	.yejiao_hezi ul{float: left;}
+	.yejiao_hezi li{font-size: 12px;color: #fff;}
+	.yejiao img{width: 40px;height: 40px;float: left;margin-left: 30px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
